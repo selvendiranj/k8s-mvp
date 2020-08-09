@@ -1,0 +1,12 @@
+<div class="toolbar" role="banner">
+ <img alt="company Logo" src="assets/images/logo.jpg" />
+ <span>Micro Frontend UI</span>
+ <div class="spacer"></div>
+ <a aria-label="Transactions" title="Transactions" class="menu-item" href="javascript:void(0)" routerLink="/transactions">Transactions</a>
+ <a aria-label="Accounts" title="Accounts" class="menu-item" href="javascript:void(0)" routerLink="/accounts">Accounts</a>
+ <a aria-label="Cards" title="Cards" class="menu-item" href="javascript:void(0)" routerLink="/cards">Cards</a>
+</div>
+<div class="content" role="main">
+ <router-outlet></router-outlet>
+</div>
+<footer style="position: fixed"> <span>&copy; {{ date | date: 'yyyy'}} Micro Frontend UI App. All rights reserved. </span></footer>

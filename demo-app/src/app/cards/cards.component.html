@@ -1,0 +1,34 @@
+<!-- List Panel -->
+<div class="card">
+ <div class="card-header bg-primary app-card-header">Cards List</div>
+ <div class="card-body app-card-body">
+  <div class="table-responsive">
+   <table class="table table-striped table-hover">
+    <thead>
+     <tr>
+       <td>Card Number</td>
+       <td>Account Number</td>
+       <td>Exp Month</td>
+       <td>Exp Year</td>
+       <td>Blocked</td>
+       <td>Hotlisted</td>
+       <td>Max Limit</td>
+       <td>Available Amout</td>
+     </tr>
+    </thead>
+     <tbody *ngIf="cards && cards.length > 0">
+      <tr *ngFor="let card of cards">
+       <td>{{card.cardNumber}}</td>
+       <td>{{card.accountNumber}}</td>
+       <td>{{card.expMonth}}</td>
+       <td>{{card.expYear}}</td>
+       <td>{{card.blocked}}</td>
+       <td>{{card.hotlisted}}</td>
+       <td>{{card.maxLimit}}</td>
+       <td>{{card.availableAmt}}</td>
+      </tr>
+     </tbody>
+   </table>
+  </div>
+ </div>
+</div>
